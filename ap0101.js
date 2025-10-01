@@ -28,6 +28,7 @@ function init() {
   const box1 = new THREE.Mesh(box1Geometry, box1Material);
   box1.position.y = 4;
   scene.add(box1);
+  
   // 箱2の表示設定
   const box2Geometry = new THREE.BoxGeometry(8, 4, 2);
   const box2Material = new THREE.MeshLambertMaterial({ color: 0xFF8000});
@@ -36,7 +37,8 @@ function init() {
   box2.position.x = 10;
   box2.position.y = 3;
   scene.add(box2);
-  //箱3の表示設定
+
+  //箱3の表示設定(オリジナル)
   const box3Geometry = new THREE.BoxGeometry(2, 2, 2);
   const box3Material = new THREE.MeshLambertMaterial({ color: 0xFF0000});
   const box3 = new THREE.Mesh(box3Geometry, box3Material);
